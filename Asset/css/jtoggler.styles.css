@@ -1,0 +1,91 @@
+.jtoggler {
+    display: none;
+}
+.jtoggler:disabled + .jtoggler-control,
+.jtoggler:checked:disabled + .jtoggler-control {
+    background-color: rgba(0,0,0,0.05);
+}
+.jtoggler:disabled + .jtoggler-control .jtoggler-handle {
+    background-color: #ccc;
+}
+.jtoggler:disabled + .jtoggler-control:hover {
+    cursor: default;
+}
+.jtoggler-wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+.jtoggler-control {
+    position: relative;
+
+    width: 70px;
+    height: 30px;
+
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.25);
+
+    transition: background-color 0.3s;
+}
+.jtoggler-control:hover {
+    cursor: pointer;
+}
+.jtoggler-control .jtoggler-handle {
+    display: block;
+    position: absolute;
+
+    width: 28px;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 0;
+
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+
+    transition: left 0.3s;
+}
+.jtoggler:checked + .jtoggler-control {
+    background: #f83;
+}
+.jtoggler:checked + .jtoggler-control .jtoggler-handle {
+    left: 42px;
+}
+.jtoggler-label {
+    padding-left: 5px;
+}
+.jtoggler-radio {
+    display: none;
+}
+.jtoggler-btn-wrapper {
+    display: flex;
+    width: 33.33%;
+}
+.jtoggler-btn-wrapper:hover {
+    cursor: pointer;
+}
+.jtoggler-wrapper-multistate .jtoggler-control {
+    display: flex;
+    width: 90px;
+}
+.jtoggler-wrapper-multistate .jtoggler-control.is-fully-active {
+    background: #d30;
+}
+.jtoggler-wrapper-multistate .jtoggler:disabled + .jtoggler-control:hover .jtoggler-btn-wrapper {
+    cursor: default;
+}
+.jtoggler-btn-wrapper:nth-child(1).is-active ~ .jtoggler-handle {
+    left: 0;
+
+    background: #3ebb2d url("../img/smile0.png");
+}
+.jtoggler-btn-wrapper:nth-child(2).is-active ~ .jtoggler-handle {
+    left: 30px;
+
+    background: #d83 url("../img/smile1.png");
+}
+.jtoggler-btn-wrapper:nth-child(3).is-active ~ .jtoggler-handle {
+    left: 62px;
+
+    background: #d11 url("../img/smile2.png");
+}
+

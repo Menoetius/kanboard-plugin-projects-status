@@ -1,0 +1,198 @@
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-row-space-between{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex-row-space-around{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-column{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flex-column-space-between{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.flex-row-start{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.flex-basis{
+    flex-basis: auto;
+}
+
+.deleted{
+    color: #888888;
+}
+
+article.textarea{
+    border: solid 1px #cccccc;
+    min-height: 180px;
+    max-width: 90%;
+    padding: 5px 8px 2px;
+    margin-bottom: 1.5em;
+    background-color: #fff;
+}
+
+progress[value]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #bebfb2;
+    width: 100%
+}
+
+progress.color0::-moz-progress-bar{
+    background-color: #3ebb2d;
+}
+
+progress.color1::-moz-progress-bar{
+    background-color: #d83;
+}
+
+progress.color2::-moz-progress-bar{
+    background-color: #d11;
+}
+
+.status-task-holder .task-board{
+    min-width: 150px;
+}
+
+.graph-container{
+    height: 250px;
+}
+
+.user_chart{
+    max-width: 600px;
+    height: 230px !important;
+}
+
+.columns_chart{
+    max-width: 500px;
+    height: 230px !important;
+}
+
+.issue_steps_content{
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #f5fafa;
+    border-top: solid 1px #a1a1a1;
+    border-left: solid 1px #a1a1a1;
+    border-right: solid 1px #a1a1a1;
+}
+
+.issue_steps_content article{
+    max-width: 100%;
+}
+
+.alert{
+    top: 40px;
+    bottom: initial;
+}
+
+.project-metrics{
+    margin-left: 1.5em;
+    color: #333;
+}
+
+div.issue-comment{
+    margin-bottom: 1.5em;
+}
+
+div.issue-comment-header{
+    background-color: #cccccc;
+    border: solid 1px #e0e3e2;
+    padding: 1em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.report-table th{
+    text-align: center;
+}
+
+.report-table tbody > tr:nth-of-type(even) {
+    background-color: #fdffde;
+}
+
+.report-table td.green{
+    background-color: #3ebb2d;
+}
+
+.report-table td.yellow{
+    background-color: #d83;
+}
+
+.report-table td.red{
+    background-color: #d11;
+}
+
+button.export.btn-blue {
+    padding: 0.5em;
+    margin: 0 1em 1em 0;
+    border-radius: 7px;
+}
+
+
+div.projectsReportButton{
+    margin: 0 1em 1em 0;
+}
+
+div.projectsReportButton a{
+    box-shadow: 2px 2px 0 0 #3e5ab4;
+    padding: 0.5em;
+    border-radius: 7px;
+    text-decoration: none;
+    border-color: #3079ed;
+    background: #4d90fe;
+    color: #fff;
+}
+div.projectsReportButton a:hover{
+    padding: 0.5em;
+    margin: 0 1em 1em 0;
+    border-radius: 7px;
+    border-color: #218cdc;
+    background: #407ddc;
+}
+
+.list-width {
+    width: 15%;
+}
+
+.list_small {
+    width: 10%;
+}
+
+@media print {
+    select#form-status{
+        border: none;
+        background-color: white;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
